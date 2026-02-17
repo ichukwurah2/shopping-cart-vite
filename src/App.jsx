@@ -5,9 +5,12 @@ import Home from "./pages/Home";
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
 
-  const addToCart = () => {
-    setCartCount(cartCount + 1);
-  };
+const addToCart = () => {
+  setCartCount((prev) => prev + 1);
+};
+
+  const name = "Ify";
+  const title = `Welcome ${name} to Codecraft intranet`;
 
   return (
     <div>
